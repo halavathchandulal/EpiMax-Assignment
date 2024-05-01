@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botton-container {
+  border: 0px;
+  background-color: none;
+}
+
+/* index.css */
+.button-container {
+  border: none;
+  transition: border-color 3.3s ease;
+  cursor: pointer;
+  width: 25%;
+  background-color: transparent;
+  /* Add your other button styles here */
+}
+
+.selected {
+  border-bottom: 4px solid red; /* Adjust the border properties as needed */
+}

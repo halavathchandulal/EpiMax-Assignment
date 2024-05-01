@@ -1,0 +1,45 @@
+.task {
+  background-image: url('https://th.bing.com/th/id/OIP.2p1TKwe_KV6BxOihjCG8sgHaEK?rs=1&pid=ImgDetMain');
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  border-radius: 40px;
+}
+
+.status-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button-section-adding {
+  color: white;
+  background-color: #4c63b6;
+  font-family: 'Roboto';
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* index.css */
+.progress-color {
+  color: rgb(227, 173, 173);
+  font-weight: 600;
+  font-size: 20px; /* Change text color to red */
+}
+
+.complete-color {
+  color: rgb(136, 227, 136);
+  font-weight: 600;
+  font-size: 20px; /* Change text color to green */
+}
+.start-color {
+  color: rgb(232, 201, 142);
+  font-weight: 600;
+  font-size: 20px;
+}
