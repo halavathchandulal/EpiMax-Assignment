@@ -1,4 +1,3 @@
-// HeaderComponent.js
 import React from 'react'
 
 function HeaderComponent() {

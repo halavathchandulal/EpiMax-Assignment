@@ -1,8 +1,12 @@
-// TaskInputComponent.js
 import React from 'react'
 import './index.css'
 
-function TaskInputComponent({newTask, setNewTask, handleTaskAddition}) {
+function TaskInputComponent({
+  newTask,
+  setNewTask,
+  handleTaskAddition,
+  handleTaskSave,
+}) {
   return (
     <div className='task-input'>
       <input
@@ -14,6 +18,9 @@ function TaskInputComponent({newTask, setNewTask, handleTaskAddition}) {
       />
       <button className='button-input' onClick={handleTaskAddition}>
         Add
+      </button>
+      <button className='button-input' onClick={handleTaskSave}>
+        Save
       </button>
     </div>
   )

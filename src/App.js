@@ -1,4 +1,3 @@
-// App.js
 import React, {useState} from 'react'
 import './App.css'
 import HeaderComponent from './components/HeaderComponent'
@@ -49,6 +48,12 @@ function App() {
     console.log('Editing task with ID:', taskId)
   }
 
+  const handleTaskSave = () => {
+    // Implement the logic to save the new task here
+    // For example, you can call handleTaskAddition to add the new task to the list
+    handleTaskAddition()
+  }
+
   const filteredTasks = tasks.filter(task => {
     if (filter === 'All') return true
     return task.status === filter
@@ -65,6 +70,7 @@ function App() {
           newTask={newTask}
           setNewTask={setNewTask}
           handleTaskAddition={handleTaskAddition}
+          handleTaskSave={handleTaskSave} // Pass the handleTaskSave function as a prop
         />
         <div>
           <TaskListComponent
